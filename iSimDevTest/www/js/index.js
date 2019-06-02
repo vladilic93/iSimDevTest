@@ -1,5 +1,5 @@
-let takePhotoButton = document.getElementById("btn-take-photo");    
 window.onload = function() {
+  let takePhotoButton = document.getElementById("btn-take-photo");    
   takePhotoButton.addEventListener('click', function() {
     window.webkit.messageHandlers.Image.postMessage("TakeNew");
   }, false);
